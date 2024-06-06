@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url("fonts/Montserrat-Regular.otf") format("opentype");
+}
+* {
+    font-family: Montserrat-Regular !important;
+    /*background-color:white;*/
+}
+.complain-wrapper {
+    margin-left: 10px;
+}
+.complain-area 
+{
+    background:White;
+}
+/*.complain-area h1 {
+        background: #d7182a;
+        padding: 10px 20px;
+        color: #fff;
+    }*/
+
+    .h2 {
+        background: #d7182a;
+        padding: 10px 20px;
+        color: #fff;
+    }
+    
+    .complain-area input#Button2 {  
+    padding: 10px 15px 10px;
+    background: white;
+    border: 0px;
+    font: 600 13px 'Calibri';
+    /* border-radius: 4px; */
+    color: #d7182a;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: 1px solid #d7182a;
+}
+
+.complain-area input#Btn_back {
+    padding: 10px 15px 10px;
+    background: white;
+    border: 0px;
+    font: 600 13px 'Calibri';
+    /* border-radius: 4px; */
+    color: #d7182a;
+    margin-bottom: 10px;
+    border: 1px solid #d7182a;
+    cursor: pointer;
+}
+
+    
+
+    .complain-area .dateform-to #form {
+        color: #000;
+        font: 600 13px 'Calibri';
+        padding-bottom: 10px;
+    }
+
+    .complain-area .dateform-to #to {
+        color: #000;
+        font: 600 13px 'Calibri';
+        padding-bottom: 10px;
+    }
+
+.complain-area {
+}
+
+    .complain-area h2 {
+        background: #d7182a;
+        padding: 10px 20px;
+        color: #fff;
+        font: 300 23px 'Calibri';
+    }
+
+
+
+
+    .complain-area .dateform-to #form {
+        color: #000;
+        font: 600 13px 'Calibri';
+        padding-bottom: 10px;
+    }
+
+    .complain-area .dateform-to #to {
+        color: #000;
+        font: 600 13px 'Calibri';
+        padding-bottom: 10px;
+    }
+
+
+    .complain-area .dateform-to .from-area {
+        width: 18%;
+        display: inline-block;
+    }
+
+
+        .complain-area .dateform-to .from-area input {
+            width: 87%;
+            padding: 6px;
+            border: 2px solid #d7182a;
+            border-radius: 5px;
+        }
+
+
+        .complain-area .dateform-to .from-area span {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            font-family: Montserrat-Regular; 
+		padding: 8px 6px;
+        }
+        
+        .complain-area select#DropDownList10 {
+            width: 96%;
+            padding: 5px;
+            border: 2px solid #d7182a;
+            border-radius: 5px;
+            font:500 13px 'Helvetica';
+        }
+        .complain-area select#DropDownList20 {
+            width: 96%;
+            padding: 5px;
+            border: 2px solid #d7182a;
+            border-radius: 5px;
+            font:500 13px 'Helvetica';
+        }
+        .complain-area select#DropDownList1 {
+            width: 42%;
+            padding: 5px;
+            /*border-radius: 5px;*/
+            font:500 13px 'Helvetica';
+            border: 1px solid #d7182a;
+            text-transform:uppercase;
+        }
+    .complain-area select#DropDownList2 {
+        width: 42%;
+        padding: 5px;
+        /*border-radius: 5px;*/
+        font: 500 13px 'Helvetica';
+        border: 1px solid #d7182a;
+        /*text-transform: uppercase;*/
+    }
+    .complain-area select#DropDownList3 {
+        width: 42%;
+        padding: 5px;
+        /*border-radius: 5px;*/
+        font: 500 13px 'Helvetica';
+        margin-left: 2px;
+        border: 1px solid #d7182a;
+        /*text-transform: uppercase;*/
+    }
+select#DDL4 {
+    width: 42%;
+    padding: 5px;
+    border-radius: 5px;
+    font: 500 13px 'Helvetica';
+    /*text-transform: uppercase;*/
+}
+select#DDL5 {
+    width: 42%;
+    padding: 5px;
+    border-radius: 5px;
+    font: 500 13px 'Helvetica';
+    /*text-transform: uppercase;*/
+}
+
+.complain-wrapper .complain-area {
+}
+
+.complain-area h2 {
+    background: #d7182a;
+    padding: 10px 20px;
+    color: #fff;
+    font: 300 23px 'Helvetica';
+}
+
+.complain-area input#Button3 {
+    padding: 10px 15px 10px;
+    background: white;
+    border: 0px;
+    font: 600 13px 'Helvetica';
+    /* border-radius: 4px; */
+    color: #d7182a;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #d7182a;
+}
+
+
+
+.complain-area .dateform-to #form {
+    color: #000;
+    font: 600 13px 'Helvetica';
+    padding-bottom: 10px;
+}
+
+.complain-area .dateform-to #to {
+    color: #000;
+    font: 600 13px 'Helvetica';
+    padding-bottom: 10px;
+}
+
+.from-area {
+    width: 25%;
+    display: inline-block;
+}
+
+    .from-area input {
+        width: 90%;
+        padding: 8px;
+        border: 2px solid #d7182a;
+        border-radius: 5px;
+    }
+
+    .from-area span {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: Montserrat-Regular; padding: 8px 6px;
+    }
+
+.dateform-to input#Button4, .dateform-to input#Button5 {    
+    padding: 10px 15px 10px;
+    background: none;
+    border: 0;
+    /* border-radius: 5px; */
+    background: white;
+    color: #d7182a;
+    font: 600 13px 'Helvetica';
+    border: 1px solid #d7182a;
+    cursor: pointer;
+}
+.calendar{
+    outline:auto; 
+    padding:15px;
+    background-color:White;
+    }
+
+.pager
+{
+    display:grid;
+}
+
+.closetick
+{
+    padding-bottom:10px;
+    padding-left: 12px;
+}
+
+
+
+.gridtableareaa {
+    width: 100%;
+    margin: 20px auto;
+    padding: 18px;
+}
+
+    .gridtableareaa table {
+        width: 100%;
+    }
+
+        .gridtableareaa table td {
+            padding: 10px;
+            font: 400 13px 'Helvetica'; 
+            text-align:center;
+        }
+        
+        
+        .gridtableareaa table td a {
+            background: white;
+            padding: 7px 8px;
+            text-decoration: none;
+            /* border-radius: 5px; */
+            color: #d7182a !important;
+            font: 600 13px 'Helvetica';
+            border: 1px solid #d7182a;
+            }
+
+        .gridtableareaa table th {
+            background: #d7182a;
+            padding: 7px 8px; color:#fff;
+            font: 500 13px 'Helvetica';
+        }
+            
+            
+            
+/*---------------------------*/
+
+
+.gridtablearea {
+    width: 100%;
+}
+
+    .gridtablearea table {
+        width: 100%;
+    }
+    
+    .gridtablearea table td 
+    {
+    }
+.tidi1 {
+    font: 500 13px 'Calibri';
+    padding: 10px;
+    /*text-transform: uppercase;*/
+}
+        .tidi {
+            padding: 10px;
+            font: 400 13px 'Calibri';
+            text-align:center;
+            /*text-transform: uppercase;*/
+        }
+        
+            .gridtablearea table td a {
+                background: #d7182a;
+                padding: 7px 8px;
+                text-decoration: none;
+                border-radius: 5px;
+                color: #fff !important;
+                font: 500 13px 'Calibri';
+            }
+    .gridtablearea table th {
+            background: #d7182a;
+            padding: 7px 8px; color:#fff;
+        }
+
+
+    .gridtablearea.table60lida td {
+        width: 25%;
+        text-align: left;
+    }
+        
+
+        .gridtablearea.table60lida td + td {
+            width: 70%;
+        }
+
+            .gridtablearea.table60lida td + td input {
+                width: 41%;
+                padding: 4px;
+                font: 500 13px 'Calibri';
+                border: 1px solid #d7182a;
+                /*text-transform: uppercase;*/
+            }
+
+            .gridtablearea.table60lida td + td select {
+                width: 42%;
+                padding: 10px;
+            }
+
+            .gridtablearea.table60lida td + td textarea {
+                width: 41%;
+                padding: 3px;
+                resize: none;
+                font: 500 13px 'Calibri';
+                border: 1px solid #d7182a;
+                /*text-transform: uppercase;*/
+            }
+            input#txtName {
+                 margin-left: 30px;
+                 /*text-transform: uppercase;*/
+            }
+            textarea#txtComment {
+                resize: none;
+                font: 500 13px 'Calibri';
+                margin-left: 30px;
+                /*text-transform: uppercase;*/
+            }
+
+        .gridtablearea input#Button1
+        {           
+            margin-top: 30px;
+            padding: 10px 12px;
+            border: 0;
+            /* border-radius: 5px; */
+            background: white;
+            color: #d7182a;
+            font: 600 13px 'Calibri';
+            border: 1px solid #d7182a;
+            cursor: pointer;
+        }
+        .btn_Submit {
+            padding: 10px 12px;
+            background: none;
+            border: 0;
+            /* border-radius: 5px; */
+            background: white;
+            color: #d7182a;
+            font: 600 13px 'Calibri';
+            border: 1px solid #d7182a;
+        }
+        
+        
+        
+        .gridtableareaa.table60lida td {
+        width: 20%;
+        text-align: left;
+    }
+    .gridtableareaa.table60lida td + td {
+            width: 70%;
+        }
+        .gridtableareaa.table60lida td + td input {
+                width: 100%;
+                padding: 3px;
+                font: 500 13px 'Calibri';
+            }
+
+            .gridtableareaa.table60lida td + td select {
+                width: 42%;
+                padding: 10px;
+            }
+
+
+            .gridtableareaa.table60lida td + td textarea {
+                width: 100%;
+                padding: 10px;
+                font: 500 13px 'Calibri';
+            }
+
+        .gridtableareaa input#Button1 {
+            padding: 10px 12px;
+            background: none;
+            border: 0;
+            border-radius: 5px;
+            background: #d7182a;
+            color: #fff;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        
+    .gridtablearea.table60lida.table-report-12 tr {
+        padding-bottom: 10px;
+        display: flex;
+    }
+    .gridtablearea.table60lida.table-report-12 td + td {
+        width: 40%;
+        padding: 10px;
+        border: 2px solid #ccc;
+    }
+
+.comment-area {
+    padding: 25px;
+}
+
+.comment-area {
+}
+
+    .comment-area h4 {
+        font: 300 18px 'Calibri';
+        color: #fff;
+        padding: 15px;
+        background: #d7182a;
+    }
+
+    .comment-area span {
+        color: #000;
+    }
+
+.comment-area {
+    font: 400 13px 'Calibri';
+}
+
+.gridtablearea.table60lida input#btn_Submit {
+    padding: 10px 12px;
+    background: none;
+    border: 0;
+    border-radius: 5px;
+    background: #d7182a;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+.sub-title-mandatory , .star-valid {
+    color: red;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Montserrat-Regular;
+}
+span#title1 {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Montserrat-Regular;
+}
+input[type=radio] {
+    display:none; 
+    margin:10px;
+}
+
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+input[type=radio] + label {
+    display:inline-block;
+    margin:4px;
+    padding: 6px 13px;
+    background-color: #e7e7e7;
+    border-color: #ddd;
+}
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input[type=radio]:checked + label { 
+   background-image: none;
+    background-color:white;
+     border: double;
+     border-color:Red;
+    color: Red;
+}
+
+.Message {
+    color: #d7182a;
+    padding: 15px;
+    /*text-transform: uppercase;*/
+    text-decoration: underline;
+}
+
+.hidden
+{
+    display:none;
+}
+
+.Divhid 
+{
+    cursor: pointer;
+        background: white;
+        /* color: #d7182a; */
+        color: black;
+        padding: 0px 10px 10px;
+        color: #d7182a;
+        font: 600 16px 'Calibri';
+        text-decoration: none;
+        /* border: 2px solid; */
+    }
+    span.plus {
+    padding: 0px 6px 0px 6px;
+    font-size: 20px;
+    border: 2px solid;
+    margin-left: 5px;
+}
+.floating_label {
+  position:absolute;
+  z-index:200;
+  top: 90px;
+  left: 130px;
+  padding: 6px;
+  border: 2px solid;
+  /* border-radius: 49px; */
+  background: #d7182a;
+  color: white;
+}
+
+table.tblcmnt {
+    margin-top: -40px;
+    /*text-transform: uppercase;*/
+}
+select#subj 
+{
+    /*text-transform: uppercase;*/
+}

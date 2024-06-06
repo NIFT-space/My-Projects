@@ -1,0 +1,56 @@
+﻿@page
+@model ChequePro.Pages.Cheques.ChequeSummaryModel
+@{
+    ViewData["Title"] = "Cheque Summary";
+}
+
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Cheque Summary</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Cheque No</th>
+                            <th>Amount</th>
+                            <th>Process Date</th>
+                            <th>Sender Bank Branch</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            @{
+                            foreach (var item in Model.lstCheques)
+                                {
+                                <tr>
+                                    <td>@item.ChequeNo</td>
+                                    <td>@item.Amount</td>
+                                    <td>@item.Processdate</td>
+                                    <td>@item.SenderBankBranchName</td>
+                                    <td>
+                                        <a href="/Cheques/ChequeDetails?id=@item.hostid" class="btn btn-info ">
+                                            <i class="fas fa-edit fa-sm"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                    }
+                            }
+                            
+                        
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->

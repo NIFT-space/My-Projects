@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Myrmec</name>
+    </assembly>
+    <members>
+        <member name="T:Myrmec.FileTypes">
+            <summary>
+            Common file types for populate a new sniffer instance.
+            </summary>
+        </member>
+        <member name="P:Myrmec.FileTypes.CommonFileTypes">
+            <summary>
+            Gets CommonFileTypes.
+            Replace this with <see cref="P:Myrmec.FileTypes.Common"/>
+            </summary>
+        </member>
+        <member name="P:Myrmec.FileTypes.Common">
+            <summary>
+            Gets Common It contains the format of the file we often see.
+            </summary>
+        </member>
+        <member name="P:Myrmec.FileTypes.Unfrequent">
+            <summary>
+            It contains unfrequent file formats.
+            </summary>
+        </member>
+        <member name="T:Myrmec.Metadata">
+            <summary>
+            metadata
+            </summary>
+        </member>
+        <member name="M:Myrmec.Metadata.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Myrmec.Metadata"/> class.
+            </summary>
+        </member>
+        <member name="P:Myrmec.Metadata.Extentions">
+            <summary>
+            Gets or sets the extention list of this metadata.
+            </summary>
+        </member>
+        <member name="P:Myrmec.Metadata.Offsets">
+            <summary>
+            Gets or sets the offset list of one metadata.
+            </summary>
+        </member>
+        <member name="M:Myrmec.Metadata.Match(System.Byte[])">
+            <summary>
+            Start match.
+            </summary>
+            <param name="data">The hex head of one file.</param>
+            <returns>match result: matched or not.</returns>
+        </member>
+        <member name="T:Myrmec.MyrmecExtentions">
+            <summary>
+            MyrmecExtentions
+            </summary>
+        </member>
+        <member name="M:Myrmec.MyrmecExtentions.Add(System.Collections.Generic.List{Myrmec.Metadata},Myrmec.Record)">
+            <summary>
+            Add metadata into metadata list.
+            </summary>
+            <param name="list">The target list.</param>
+            <param name="record">The metadata record need to add.</param>
+        </member>
+        <member name="M:Myrmec.MyrmecExtentions.GetByte(System.String)">
+            <summary>
+            Get byte array from string.
+            </summary>
+            <param name="source">byte format string.</param>
+            <returns>result byte array.</returns>
+        </member>
+        <member name="M:Myrmec.MyrmecExtentions.Match(System.Collections.Generic.List{Myrmec.Metadata},System.Byte[],System.Boolean)">
+            <summary>
+            Match result from complex metadata.
+            </summary>
+            <param name="list">The complex metadata list.</param>
+            <param name="data">Data to be match.</param>
+            <param name="matchAll">Match all result or only first that sniffer matched.</param>
+            <returns>Match result list.</returns>
+        </member>
+        <member name="M:Myrmec.MyrmecExtentions.MimeType(System.String)">
+            <summary>
+            Get this extention's Mime type name.
+            <see cref="M:Myrmec.Mime.MimeTypeStringExtentions.MimeType(System.String)"/>
+            </summary>
+            <param name="source"></param>
+            <returns>Mime type name.</returns>
+        </member>
+        <member name="M:Myrmec.MyrmecExtentions.Populate(Myrmec.Sniffer,System.Collections.Generic.IList{Myrmec.Record})">
+            <summary>
+            Populate matadata tree use record list.
+            </summary>
+            <param name="sniffer"></param>
+            <param name="records">Matadate record list.</param>
+        </member>
+        <member name="T:Myrmec.Node">
+            <summary>
+            node
+            </summary>
+        </member>
+        <member name="M:Myrmec.Node.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Myrmec.Node"/> class.
+            </summary>
+        </member>
+        <member name="P:Myrmec.Node.Children">
+            <summary>
+            Gets or sets children.
+            </summary>
+        </member>
+        <member name="P:Myrmec.Node.Depth">
+            <summary>
+            Gets or sets depth.
+            </summary>
+        </member>
+        <member name="P:Myrmec.Node.Extentions">
+            <summary>
+            Gets or sets extentions.
+            </summary>
+        </member>
+        <member name="P:Myrmec.Node.Parent">
+            <summary>
+            Gets or sets parent node.
+            </summary>
+        </member>
+        <member name="T:Myrmec.Offset">
+            <summary>
+            Representing a section of offset.
+            </summary>
+        </member>
+        <member name="P:Myrmec.Offset.Count">
+            <summary>
+            Gets or sets the count of data array.
+            </summary>
+        </member>
+        <member name="P:Myrmec.Offset.Start">
+            <summary>
+            Gets or sets the start position of data array.
+            </summary>
+        </member>
+        <member name="P:Myrmec.Offset.Value">
+            <summary>
+            Gets or sets the AscII string corresponding to the binary value of this data
+            </summary>
+        </member>
+        <member name="T:Myrmec.Record">
+            <summary>
+            Present one record.
+            </summary>
+        </member>
+        <member name="M:Myrmec.Record.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Myrmec.Record"/> class.
+            </summary>
+        </member>
+        <member name="M:Myrmec.Record.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Myrmec.Record"/> class.
+            </summary>
+            <param name="extentions">extentions string ,split with "," what if it has many.</param>
+            <param name="hex">hex string, split with ",".</param>
+        </member>
+        <member name="M:Myrmec.Record.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Myrmec.Record"/> class.
+            </summary>
+            <param name="extentions">Extentions format string.</param>
+            <param name="hex">File hex head format string.</param>
+            <param name="offset">Offset of this record.</param>
+        </member>
+        <member name="M:Myrmec.Record.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Myrmec.Record"/> class.
+            </summary>
+            <param name="extentions">extentions string ,split with "," what if it has many.</param>
+            <param name="hex">hex string, split with ",".</param>
+            <param name="description">description</param>
+        </member>
+        <member name="M:Myrmec.Record.#ctor(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Myrmec.Record"/> class.
+            </summary>
+            <param name="extentions">extentions string ,split with "," what if it has many.</param>
+            <param name="hex">hex string, split with ",".</param>
+            <param name="offset"></param>
+            <param name="description">description</param>
+        </member>
+        <member name="P:Myrmec.Record.Description">
+            <summary>
+            Gets or sets Description
+            </summary>
+        </member>
+        <member name="P:Myrmec.Record.Extentions">
+            <summary>
+            Gets or sets file extentions.
+            </summary>
+        </member>
+        <member name="P:Myrmec.Record.Hex">
+            <summary>
+            Gets or sets Hex String.
+            </summary>
+        </member>
+        <member name="P:Myrmec.Record.Offset">
+            <summary>
+            Gets or sets offset
+            </summary>
+        </member>
+        <member name="P:Myrmec.Record.IsComplexMetadata">
+            <summary>
+            Gets a value indicating whether this record has offset or contain a variable byte or not.
+            </summary>
+        </member>
+        <member name="T:Myrmec.Sniffer">
+            <summary>
+            sniffer
+            </summary>
+        </member>
+        <member name="F:Myrmec.Sniffer.FileExtentionHelpUrl">
+            <summary>
+            You can get the file extention name detail in this wikipedia page.
+            </summary>
+        </member>
+        <member name="M:Myrmec.Sniffer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Myrmec.Sniffer"/> class.
+            </summary>
+        </member>
+        <member name="P:Myrmec.Sniffer.ComplexMetadata">
+            <summary>
+            Gets or sets ComplexMetadatas.
+            </summary>
+        </member>
+        <member name="M:Myrmec.Sniffer.Add(System.Byte[],System.String[])">
+            <summary>
+            Add a record to matadata tree.
+            </summary>
+            <param name="data">file head.</param>
+            <param name="extentions">file extention list.</param>
+        </member>
+        <member name="M:Myrmec.Sniffer.Add(Myrmec.Record)">
+            <summary>
+            
+            </summary>
+            <param name="record"></param>
+        </member>
+        <member name="M:Myrmec.Sniffer.Match(System.Byte[],System.Boolean)">
+            <summary>
+            Find extentions that match the file hex head.
+            </summary>
+            <param name="data">file hex head</param>
+            <param name="matchAll">match all result or only the first.</param>
+            <returns>matched result</returns>
+        </member>
+    </members>
+</doc>

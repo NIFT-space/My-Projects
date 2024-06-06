@@ -1,0 +1,18 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.20.175.87",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/{everything}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://10.20.175.87:8080/"
+  }
+}

@@ -1,0 +1,713 @@
+﻿@page
+@model ChequePro.Pages.Cheques.ChequeDetailsModel
+@{
+    ViewData["Title"] = "Cheque Details";
+}
+
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card shadow mb-1">
+                <div class="card-body">
+                    <form class="">
+                        @* <h6 class="m-0 font-weight-bold text-primary">MICR Data</h6> *@
+                        <div class="form-row">
+                            <div class="form-group col-md-1 txt-center">
+                                <h6 class="m-0 font-weight-bold text-primary">MICR Data</h6>
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="setting-input-1" class="form-label">Tr Seq No</label>
+                                @* <input class="form-control" id="SequenceNo" type="text" value="@Model.objChequesDetail.SequenceNo" placeholder="000000000" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.SequenceNo
+                                </div>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="setting-input-1" class="form-label">OW Bank Name</label>
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.ReceiverBankName
+                                </div>
+                                @* <input class="form-control text-uppercase" id="merchantCode" value="@Model.objChequesDetail.ReceiverBankName" type="text" placeholder="Soneri bank ltd." required disabled /> *@
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="setting-input-1" class="form-label">OW Branch Name</label>
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.ReceiverBranchName
+                                </div>
+                                @* <input class="form-control text-uppercase" id="merchantCode" type="text" value="@Model.objChequesDetail.ReceiverBranchName" placeholder="Qasimabad branch" required disabled /> *@
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="setting-input-1" class="form-label">Tran Code</label>
+                                @* <input class="form-control" id="merchantCode" type="text" value="@Model.objChequesDetail.TransCode" placeholder="000" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.TransCode
+                                </div>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="setting-input-1" class="form-label">Account No</label>
+                                @* <input class="form-control" id="merchantCode" type="text" value="@Model.objChequesDetail.AccountNo" placeholder="0000000000000000" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.AccountNo
+                                </div>
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="setting-input-1" class="form-label">Cheque No</label>
+                                @* <input class="form-control" id="merchantCode" type="text" value="@Model.objChequesDetail.ChequeNo" placeholder="00000000" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.ChequeNo
+                                </div>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="setting-input-1" class="form-label">Amount</label>
+                                @* <input class="form-control" id="merchantCode" type="text" value="@Model.objChequesDetail.Amount" placeholder="0000000000000000000" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.Amount
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-1 txt-center">
+                                <h6 class="m-0 font-weight-bold text-primary">IQA Result</h6>
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="setting-input-1" class="form-label">IQA</label>
+                                @* <input class="form-control text-uppercase" id="merchantCode" value="@Model.objChequesDetail.IQATag" type="text" placeholder="Pass" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.IQATag
+                                </div>
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="setting-input-1" class="form-label">UV</label>
+                                @* <input class="form-control text-uppercase" id="merchantCode" value="@Model.objChequesDetail.UVStr" type="text" placeholder="A.Avg/Chk%" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.UVStr
+                                </div>
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="setting-input-1" class="form-label">UV %</label>
+                                @* <input class="form-control" id="merchantCode" type="text" value="@Model.objChequesDetail.UVPercent" placeholder="52" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.UVPercent
+                                </div>
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="setting-input-1" class="form-label">UV Tmp</label>
+                                @* <input class="form-control text-uppercase" id="merchantCode" value="@Model.objChequesDetail.UVTemplateID" type="text" placeholder="C01" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.UVTemplateID
+                                </div>
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="setting-input-1" class="form-label">QR Code</label>
+                                @* <input class="form-control text-uppercase" id="merchantCode" value="@Model.objChequesDetail.barcodeMatch" type="text" placeholder="N/A" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.barcodeMatch
+                                </div>
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="setting-input-1" class="form-label">MICR</label>
+                                @* <input class="form-control text-uppercase" id="merchantCode" value="@Model.objChequesDetail.MICR_Present" type="text" placeholder="Fail" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.MICR_Present
+                                </div>
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="setting-input-1" class="form-label">STD</label>
+                                @* <input class="form-control text-uppercase" id="merchantCode" value="@Model.objChequesDetail.STD_Non_STD" type="text" placeholder="YES" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.STD_Non_STD
+                                </div>
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="setting-input-1" class="form-label">DUP</label>
+                                @* <input class="form-control text-uppercase" id="merchantCode" value="@Model.objChequesDetail.Duplicate" type="text" placeholder="Not Dup" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.Duplicate
+                                </div>
+                            </div>
+                            <div class="form-group col-md-1">
+                                <label for="setting-input-1" class="form-label">Defer</label>
+                                @* <input class="form-control text-uppercase" id="merchantCode" value="@Model.objChequesDetail.isDeffer" type="text" placeholder="No" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.isDeffer
+                                </div>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="setting-input-1" class="form-label">Fraud History</label>
+                                @* <input class="form-control text-uppercase" id="merchantCode" value="@Model.objChequesDetail.isFraud" type="text" placeholder="No" required disabled /> *@
+                                <div class="form-control text-uppercase text-box">
+                                    @Model.objChequesDetail.isFraud
+                                </div>
+                            </div>
+                        </div>
+                        <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-5 mb-4">
+            <!-- Project Card Example -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">IQA Result</h6>
+                </div>
+                <div class="card-body">
+                    <!-- Color System -->
+                    <div class="row">
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.Undersize_Image == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Undersize Instrument
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Undersize_Image</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Undersize Instrument
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Undersize_Image</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.Framing_Error == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Framing Error
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Framing_Error</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Framing Error
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Framing_Error</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.FoldedDocCorners == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Folded or Torn Doc Corners
+                                        <div class="text-white-50 small">@Model.objChequesDetail.FoldedDocCorners</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Folded or Torn Doc Corners
+                                        <div class="text-white-50 small">@Model.objChequesDetail.FoldedDocCorners</div>
+                                    </div>
+                                </div>
+                            }
+                            
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.FoldedDocEdges == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Folded or Torn Doc Edges
+                                        <div class="text-white-50 small">@Model.objChequesDetail.FoldedDocEdges</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Folded or Torn Doc Edges
+                                        <div class="text-white-50 small">@Model.objChequesDetail.FoldedDocEdges</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.DocSkew == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Document Skew
+                                        <div class="text-white-50 small">@Model.objChequesDetail.DocSkew</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Document Skew
+                                        <div class="text-white-50 small">@Model.objChequesDetail.DocSkew</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.Oversize_Image == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Oversize Instrument
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Oversize_Image</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Oversize Instrument
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Oversize_Image</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.Piggy_Back == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Piggy Back
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Piggy_Back</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Piggy Back
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Piggy_Back</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.Image_Too_Light == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Image Too Light
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Image_Too_Light</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {    
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Image Too Light
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Image_Too_Light</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.Image_Too_Dark == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Image Too Dark
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Image_Too_Dark</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Image Too Dark
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Image_Too_Dark</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.Horizontal_Streaks == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                <div class="card-body">
+                                    Horizontal Streaks
+                                    <div class="text-white-50 small">@Model.objChequesDetail.Horizontal_Streaks</div>
+                                </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Horizontal Streaks
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Horizontal_Streaks</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.BelowMinImgsize == "ok")
+                            {
+                                 <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Below Minimum Compressed Image Size
+                                        <div class="text-white-50 small">@Model.objChequesDetail.BelowMinImgsize</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Below Minimum Compressed Image Size
+                                        <div class="text-white-50 small">@Model.objChequesDetail.BelowMinImgsize</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.AboveMaxImgsize == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Above Maximum Compressed Image Size
+                                        <div class="text-white-50 small">@Model.objChequesDetail.AboveMaxImgsize</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Above Maximum Compressed Image Size
+                                        <div class="text-white-50 small">@Model.objChequesDetail.AboveMaxImgsize</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.FrontRearMismatch == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Front Rear Dimension Mismatch
+                                        <div class="text-white-50 small">@Model.objChequesDetail.FrontRearMismatch</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Front Rear Dimension Mismatch
+                                        <div class="text-white-50 small">@Model.objChequesDetail.FrontRearMismatch</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.Carbon_Strip == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Corbon Strip
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Carbon_Strip</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Corbon Strip
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Carbon_Strip</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-lg-6 mb-1">
+                            @if (@Model.objChequesDetail.Out_of_Focus == "ok")
+                            {
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        Out Of Focus
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Out_of_Focus</div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="card bg-danger text-white shadow">
+                                    <div class="card-body">
+                                        Out Of Focus
+                                        <div class="text-white-50 small">@Model.objChequesDetail.Out_of_Focus</div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7">
+            <div class="card shadow mb-1">
+                <a href="#ChequeImages" class="d-block card-header " data-toggle="collapse"
+                   role="button" aria-expanded="true" aria-controls="ChequeImages">
+                    <h6 class="m-0 font-weight-bold text-primary">Cheque Images</h6>
+                </a>
+                <div class="collapse show" id="ChequeImages">
+                    <div class="card-body">
+                        <div class="content">
+                            <img id="img_Front" src="data:image;base64,@System.Convert.ToBase64String(Model.objChequesDetail.FrontImage)" alt="Chq_FrontImage" class="img-thumbnail" />
+                            <img id="img_Rare" src="data:image;base64,@System.Convert.ToBase64String(Model.objChequesDetail.BackImage)" alt="Chq_BackImage" class="img-thumbnail" />
+                            <img id="img_UV" src="data:image;base64,@System.Convert.ToBase64String(Model.objChequesDetail.UVImage)" alt="Chq_UVImage" class="img-thumbnail" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container-fluid -->
+
+
+<script>
+
+    function showOCR_div(divid) {
+        $(".div_model_MICROCRQR_").addClass("hide");
+        $(divid).removeClass("hide");
+    }
+
+    function rowHighlight(row) {
+        $(".rowHighlight").removeClass("rowHighlight_yes");
+        $(row).addClass("rowHighlight_yes");
+    }
+
+    function openImage(bid, bdid) {
+
+        $.post("/Batch/GetBatchDetailSingle",
+            {
+                batchid: bid,
+                batchdetailid: bdid
+
+            }, function (result) {
+
+                var Front_Base64 = result.front_Base64;
+                var Rare_Base64 = result.rare_Base64;
+                var UV_Base64 = result.uV_Base64;
+
+                $("#img_Front").attr("src", "data:image\/bmp\;base64\," + Front_Base64);
+                $("#img_UV").attr("src", "data:image\/bmp\;base64\," + UV_Base64);
+                $("#img_Rare").attr("src", "data:image\/bmp\;base64\," + Rare_Base64);
+
+            });
+    }
+
+    $(document).ready(function () {
+
+        function SaveShowScannerDetails(req__) {
+
+            $.post("/Batch/StartCaptureProcess",
+                {
+                    req: req__
+
+                }, function (result) {
+
+                    jQuery.each(result, function (index, value) {
+
+                        var BatchID = value.batchID;
+                        var BatchDetailID = value.batchDetailID;
+                        var Front_Base64 = value.front_Base64;
+                        var Rare_Base64 = value.rare_Base64;
+                        var UV_Base64 = value.uV_Base64;
+                        var MICR = value.micr;
+                        var OCR = value.ocr;
+                        var QR = value.qr;
+                        var MICR_QR = value.micR_QR;
+
+                        var tr = '';
+                        tr += '<tr onclick="rowHighlight(this)" class="rowHighlight">';
+                        tr += '<td>' + (parseInt(index) + 1) + '</td>';
+                        if (MICR != "" && OCR != "" && QR != "" && MICR_QR == "Matched") {
+                            tr += '<td>';
+                            tr += '<button onclick="showOCR_div(div_model_MICROCRQR_' + BatchDetailID + ')" class="btn btn-success btn-icon-split" data-toggle="modal" data-target="#modalOCR_MICR">';
+                            tr += '<span class="icon text-white-50 p-1">';
+                            tr += '<i class="fas fa-check"></i>';
+                            tr += '</span>';
+                            tr += '<span class="text p-1 btn-span-text-icon-split">Matched</span>';
+                            tr += '</button>';
+                            tr += '</td>';
+                        }
+                        else {
+                            tr += '<td>';
+                            tr += '<button onclick="showOCR_div(div_model_MICROCRQR_' + BatchDetailID + ')" class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#modalOCR_MICR">';
+                            tr += '<span class="icon text-white-50 p-1">';
+                            tr += '<i class="fas fa-times"></i>';
+                            tr += '</span>';
+                            tr += '<span class="text p-1 btn-span-text-icon-split">Not Matched</span>';
+                            tr += '</button>';
+                            tr += '</td>';
+                        }
+
+                        tr += '<td>';
+                        tr += '<button class="btn btn-danger btn-icon-split" data-toggle="modal" data-target="#modalIQA">';
+                        tr += '<span class="icon text-white-50 p-1">';
+                        tr += '<i class="fas fa-times"></i>';
+                        tr += '</span>';
+                        tr += '<span class="text p-1 btn-span-text-icon-split">Not Matched</span>';
+                        tr += '</button>';
+                        tr += '</td>';
+
+                        tr += '<td>';
+                        tr += '<div class="btn-icon-split">';
+                        tr += '<button onclick="openImage(' + BatchID + ',' + BatchDetailID + ');" class="btn btn-warning btn-sm2">';
+                        tr += '<i class="fas fa-search fa-sm"></i>';
+                        tr += '</button>';
+                        tr += '<button onclick="reCapture(this);" class="btn btn-primary btn-sm2">';
+                        tr += '<i class="fas fa-edit fa-sm"></i>';
+                        tr += '</button>';
+                        tr += '</div>';
+                        tr += '</td>';
+                        tr += '</tr>';
+
+                        $("#tbl_CapturedCheques").find('tbody').append($(tr))
+
+                        var div_m = '<div id="div_model_MICROCRQR_' + BatchDetailID + '" class="form-row div_model_MICROCRQR_ hide">';
+                        if (MICR != "") {
+                            div_m += '<div class="form-group col-md-12">';
+                            div_m += '<label for="setting-input-1" class="form-label">MICR Line</label>';
+                            div_m += '<div class="input-group">';
+                            div_m += '<input type="text" class="form-control is-valid" value="' + MICR + '" placeholder="For MICR Line..." disabled />';
+                            div_m += '</div>';
+                            div_m += '</div>';
+                        }
+                        else {
+                            div_m += '<div class="form-group col-md-12">';
+                            div_m += '<label for="setting-input-1" class="form-label">MICR Line</label>';
+                            div_m += '<div class="input-group">';
+                            div_m += '<input type="text" class="form-control is-invalid" placeholder="For MICR Line..." disabled  />';
+                            div_m += '</div>';
+                            div_m += '</div>';
+                        }
+
+                        if (OCR != "") {
+                            div_m += '<div class="form-group col-md-12">';
+                            div_m += '<label for="setting-input-1" class="form-label">MICR OCR</label>';
+                            div_m += '<div class="input-group">';
+                            div_m += '<input type="text" class="form-control is-valid" value="' + OCR + '" placeholder="For MICR OCR..." disabled  />';
+                            div_m += '</div>';
+                            div_m += '</div>';
+                        }
+                        else {
+                            div_m += '<div class="form-group col-md-12">';
+                            div_m += '<label for="setting-input-1" class="form-label">MICR OCR</label>';
+                            div_m += '<div class="input-group">';
+                            div_m += '<input type="text" class="form-control is-invalid" placeholder="For MICR OCR..." disabled />';
+                            div_m += '</div>';
+                            div_m += '</div>';
+                        }
+
+                        if (QR != "") {
+                            div_m += '<div class="form-group col-md-12">';
+                            div_m += '<label for="setting-input-1" class="form-label">QR-Code OCR</label>';
+                            div_m += '<div class="input-group">';
+                            div_m += '<input type="text" class="form-control is-valid" value="' + QR + '" placeholder="For QR-Code OCR..." disabled  />';
+                            div_m += '</div>';
+                            div_m += '</div>';
+
+                            if (MICR_QR == "Matched") {
+                                div_m += '<div class="form-group col-md-12">';
+                                div_m += '<label for="setting-input-1" class="form-label">MICR/QR</label>';
+                                div_m += '<div class="input-group">';
+                                div_m += '<input type="text" class="form-control is-valid" value="' + MICR_QR + '" placeholder="For MICR/QR..." disabled  />';
+                                div_m += '</div>';
+                                div_m += '</div>';
+                            }
+                            else {
+                                div_m += '<div class="form-group col-md-12">';
+                                div_m += '<label for="setting-input-1" class="form-label">MICR/QR</label>';
+                                div_m += '<div class="input-group">';
+                                div_m += '<input type="text" class="form-control is-invalid" placeholder="For MICR/QR..." disabled  />';
+                                div_m += '</div>';
+                                div_m += '</div>';
+                            }
+                        }
+                        else {
+                            div_m += '<div class="form-group col-md-12">';
+                            div_m += '<label for="setting-input-1" class="form-label">QR-Code OCR</label>';
+                            div_m += '<div class="input-group">';
+                            div_m += '<input type="text" class="form-control is-invalid" placeholder="For QR-Code OCR..." disabled  />';
+                            div_m += '</div>';
+                            div_m += '</div>';
+                        }
+                        div_m += '</div>';
+                        $(div_m).appendTo('#div_Panel_MICR_OCR_QR');
+
+                        $("#img_Front").attr("src", "data:image\/bmp\;base64\," + Front_Base64);
+                        $("#img_UV").attr("src", "data:image\/bmp\;base64\," + UV_Base64);
+                        $("#img_Rare").attr("src", "data:image\/bmp\;base64\," + Rare_Base64);
+
+                    });
+                });
+        }
+
+        $("#btnProcess").click(function () {
+
+            $("#btnProcess").html("Place your checks ... ... ... ");
+
+            $.ajax({
+                url: "https://localhost:5001/api/Arca/Scan",
+                success: function (returnedData) {
+
+                    var lastErrorCode = 0;
+
+                    if (Array.isArray(returnedData) && returnedData.length > 0) {
+                        lastErrorCode = returnedData[returnedData.length - 1].errorCode;
+                    } else if (Array.isArray(returnedData) && returnedData.length == 0) {
+                        $("#btnProcess").html("Click Me To Start!");
+                        //$("#lbl_messageError").html("No data received.");
+                        //$("#div_messageError").addClass("show").addClass("alert").addClass("alert-danger");
+                        return;
+                    } else {
+                        $("#btnProcess").html("Click Me To Start!");
+                        //$("#lbl_messageError").html("Unknown Error.");
+                        //$("#div_messageError").addClass("show").addClass("alert").addClass("alert-danger");
+                        return;
+                    }
+
+                    if (lastErrorCode < 0) {
+                        $("#btnProcess").html("Click Me To Start!");
+                        //$("#lbl_messageError").html(returnedData[0].errorString);
+                        //$("#div_messageError").addClass("show").addClass("alert").addClass("alert-danger");
+                    } else {
+
+                        SaveShowScannerDetails(returnedData);
+
+                        $("#btnProcess").html("Scan");
+                    }
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    $("#btnProcess").html("Scan");
+                    //$("#lbl_messageError").html(xhr.responseText);
+                    //$("#div_messageError").removeClass("show").addClass("show").addClass("alert").addClass("alert-danger");
+                }
+            });
+        });
+    });
+
+</script>

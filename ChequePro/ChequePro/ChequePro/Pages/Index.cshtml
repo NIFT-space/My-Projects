@@ -1,0 +1,189 @@
+﻿@page
+@model IndexModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Login - ChequePro</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template-->
+    <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/captcha.css">
+    <style>
+        form.user .form-control-user {
+            font-size: .8rem;
+            border-radius: 10rem;
+            padding: 0.1rem 0.75rem;
+        }
+    </style>
+</head>
+<body class="bg-gradient-primary">
+    <div id="spinner">
+        <img src="~/img/loader.gif" />
+    </div>
+    <div class="container">
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-12 col-md-10">
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+
+                        <div class="col-lg-12 mb-4">
+                            <div id="div_msg" class="card bg-danger text-white shadow hide">
+                                <div class="card-body">
+                                    <label id="msg"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-3">
+                            </div>
+                            <div class="col-lg-6">
+                                <form class="user" method="post" asp-page-handler="VerifyLogin">
+                                    <div class="form-group">
+                                        <input id="txtLoginID" asp-for="lgn.LoginID" class="form-control form-control-user" type="text" placeholder="Enter Login ID..." required />
+                                    </div>
+                                    <div class="form-group">
+                                        <input id="txtPassword" asp-for="lgn.Password" class="form-control form-control-user" type="password" placeholder="Password" required />
+                                        <div class="input-group-prepend" style="position: absolute;top: 24%;left: 88%;">
+                                            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon L-toggle-password"></span>
+                                        </div>
+                                    </div>
+                                    @* <div class="form-group">
+                                        <label for="pwd" style="float: left; margin-top: .2em;">Captcha:</label>
+
+                                        <!-- input captcha -->
+                                        <div class="captcha-code" style="float: left;">
+                                            <div class="code" style="float: left; border-color: currentColor; border-style: groove; width: 5em; border-radius: 10rem; margin-left: 1em; padding-left: .5em; margin-top: 0;">
+                                                <div class="dynamic-code">HNTus</div>
+                                            </div>
+                                            <div class="captcha-reload" style="float: left;">
+                                                <button class="btn btn-info btn-sm2" style="border-radius: 12rem;">
+                                                    <i class="fas fa-retweet fa-sm fa-spin"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="captcha-input">
+                                            <input type="text" class="form-control form-control-user" id="captcha-input" required="" autocomplete="off" placeholder="Enter captcha code ...">
+                                            <span id="errCaptcha"></span>
+                                        </div>
+
+                                    </div> *@
+                                    <hr />
+                                    <button id="btnSubmit" type="button" class="btn btn-primary btn-user btn-block">Login</button>
+                                    <hr />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="~/js/sb-admin-2.min.js"></script>
+
+    <script src="~/js/captcha.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+
+            $(".L-toggle-password").click(function () {
+
+                $(this).toggleClass("fa-eye fa-eye-slash");
+
+                var x = document.getElementById("txtPassword");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            });
+
+            $("#btnSubmit").click(function () {
+
+                document.getElementById("spinner").classList.add("show");
+
+                var LoginID = $('#txtLoginID').val();
+                var Password = $('#txtPassword').val();
+                //var captchaInput = $('#captcha-input').val();
+
+                //if ((captchaInput != "" && captchaInput != null) && captchaInput === $('.dynamic-code').html()) {
+                    if ((LoginID != "" && LoginID != null) && (Password != "" && Password != null)) {
+
+                        LoginModule(LoginID, Password);
+                    }
+                    else {
+                        $("#div_msg").removeClass("hide").removeClass("bg-success").addClass("show").addClass("bg-danger");
+                        $("#msg").text("Note! Please select required fields.");
+                        $(".captcha-reload").click();
+                        document.getElementById("spinner").classList.remove("show");
+                    }
+                // }
+                // else {
+                //     $("#div_msg").removeClass("hide").removeClass("bg-success").addClass("show").addClass("bg-danger");
+                //     $("#msg").text("Note! Invalid Captcha.");
+                //     $(".captcha-reload").click();
+                //     document.getElementById("spinner").classList.remove("show");
+                // }
+            });
+
+            function LoginModule(LoginID, Password) {
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Index?handler=VerifyLogin",
+                    headers: { "RequestVerificationToken": $('input[name="__RequestVerificationToken"]').val() },
+                    data: { LoginID: LoginID, Password: Password },
+                    dataType: "json",
+                    success: function (result) {
+                        //console.log(result);  //just for debug
+                        if (result == "Success") {
+                            $("#div_msg").removeClass("hide").removeClass("bg-danger").addClass("show").addClass("bg-success");
+                            $("#msg").text("Success! Access has been provided successfully.");
+                            location.href = location.origin + "/Home/Dashboard";
+                        }
+                        else {
+                            $("#div_msg").removeClass("hide").removeClass("bg-success").addClass("show").addClass("bg-danger");
+                            $("#msg").text("Error! " + result);
+                        }
+                        document.getElementById("spinner").classList.remove("show");
+                    },
+                    error: function (data, xhr, textStatus, errorThrown) {
+                        $("#div_msg").removeClass("hide").removeClass("bg-success").addClass("show").addClass("bg-danger");
+                        $("#msg").text("Error! " + textStatus);
+                        document.getElementById("spinner").classList.remove("show");
+                    }
+                });
+            }
+
+        });
+    </script>
+</body>

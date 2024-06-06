@@ -1,0 +1,374 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url("fonts/Montserrat-Regular.otf") format("opentype");
+}
+body {
+            font-size: 14px;
+            color: #444444;
+            font-family: Montserrat-Regular;
+        }
+        html{
+            font-family: Montserrat-Regular;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                padding: 40px 50px 0px 50px;
+            }
+        }
+        @media (min-width: 1200px){
+            .container {
+                display:flex;
+                width: 1170px;
+            }
+        }
+
+        .signIn_panel {
+            background: #FFF;
+            -moz-box-shadow: 0 0 3px 3px #ddd;
+            -webkit-box-shadow: 0 0 3px 3px #ddd;
+            box-shadow: 0 0 3px 3px #ddd;
+            padding: 15px 25px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #d7182a;
+            font-weight: 600;
+        }
+
+            .laptops ul {
+                padding: 0px 5px;
+                margin: 0px 8px;
+            }
+
+                .laptops ul li {
+                    padding: 0px;
+                    margin: 0px 0px;
+                    list-style: disc;
+                    font-size: 14px
+                }
+        .side_login{
+            width: 40%;
+            margin-left: 155px;
+        }
+        .form-control{
+            border: 1px solid #d7182a;
+        }
+        h1{
+            font-family: Montserrat-Regular;
+        }
+        h4{
+            font-family: Montserrat-Regular;
+        }
+        hr{
+            border-top: 1px solid #d7182a !important;
+        }
+	.btn_MainSubmit{
+	    padding: 10px 12px;
+    	    background: none;
+            border: 0;
+    	    background: white;
+    	    color: #d7182a;
+    	   font: 600 13px 'Calibri';
+    	    border: 1px solid #d7182a;
+	}
+        .btn_Submit {
+            padding: 10px 12px;
+            background: none;
+            border: 0;
+            float: right;
+            background: white;
+            color: #d7182a;
+            font: 600 13px 'Calibri';
+            border: 1px solid #d7182a;
+        }
+        .signUp_panel {
+            background: #FFF;
+            -moz-box-shadow: 0 0 3px 3px #ddd;
+            -webkit-box-shadow: 0 0 3px 3px #ddd;
+            box-shadow: 0 0 3px 3px #ddd;
+            padding: 15px 25px;
+            margin-bottom: 10px;
+        }
+        .complain-area h2 {
+            background: #d7182a;
+            padding: 10px 20px;
+            color: #fff;
+            font: 300 23px 'Calibri';
+        }
+        .logo_class {
+            /* padding-left: 20px; */
+    /* margin-bottom: -30px; */
+    /* margin-top: 6px; */
+    background: #d7182a;
+    /* padding: 10px 20px; */
+    color: #fff;
+    font: 300 23px 'Helvetica';
+        }
+        .Heading_{
+            display: inline-block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+	.btn_signup{
+            margin-right: 15px;
+            padding: 10px 12px;
+            background: none;
+            border: 0;
+            float: right;
+            background: white;
+            color: #d7182a;
+            font: 600 13px 'Calibri';
+            border: 1px solid #d7182a;
+        }
+    .Main ul{
+        padding: 0;
+        list-style: none;
+    }
+    .Main ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: center;
+        border: 1px solid #d7182a;
+        width: 200px;
+    }
+    .Main ul li a{
+        display: block;
+        padding: 8px 25px;
+        color: #d7182a;
+        text-decoration: none;
+    }
+    .Main ul li a:hover{
+        color: #fff;
+        background: #d7182a;
+    }
+    .Main ul li ul.dropdown-menu{
+        min-width: 100%; /* Set width of the dropdown */
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    .Main ul li ul.dropdown-menu li{
+        display: block;
+    border: 1px solid #d7182a;
+    color: #d7182a;
+    font: 400 15px 'Helvetica';
+    cursor: pointer;
+    }
+    .ddl_wcode{
+        border: 1px solid #d7182a;
+    }
+    span.blue-valid {
+    color: dodgerblue;
+    }
+    .Head_div{
+        /*display:flex;*/
+	float: right;
+	margin-right: 10px;
+    }
+
+    .flex-container{
+	min-height: 300px;
+	margin: 0 auto;
+	display: -webkit-flex; /* Safari */		
+	display: flex; /* Standard syntax */
+    }
+    .flex-container .column.bg-alt{
+        -webkit-flex: 1; /* Safari */
+	    -ms-flex: 1; /* IE 10 */
+	    flex: 1; /* Standard syntax */
+        padding-left:50px;
+    }
+    input[type=radio]:checked { 
+       background-image: none;
+        background-color:white;
+         border: double;
+         border-color:Red;
+        color: Red;
+    }
+    .btn_upload{
+        margin-left: 20px;
+        padding: 10px 12px;
+        background: none;
+        background: white;
+        color: #d7182a;
+        font: 600 13px 'Calibri';
+        border: 1px solid #d7182a;
+        }
+	.btn_ticket {
+    	padding: 10px 12px;
+    	background: none;
+    	border: 0;
+    	background: white;
+    	color: #d7182a;
+    	font: 600 13px 'Calibri';
+    	border: 1px solid #d7182a;
+	margin-left: 10px;
+	}
+        .banklogoclass {
+    	margin-left: 20px;
+    	color: #d7182a;
+    	background: white;
+    	padding: 10px;
+    	border: 1px solid #d7182a;
+    	font: 600 13px 'Montserrat-Regular';
+	}
+	select#ContentPlaceHolder1_DropDownList10 {
+    	width: 96%;
+    	padding: 8px;
+    	border: 2px solid #d7182a;
+    	border-radius: 5px;
+    	font: 500 13px 'Helvetica';
+	}
+	.GridMain {
+    	width: 99%;
+    	border: 1px solid #d7182a;
+	margin-top: 10px;
+	}
+	.GridMain th {
+    	background-color: #d7182a;
+    	color: White;
+    	font-size: 10pt;
+    	padding-left: 5px;
+    	padding-right: 5px;
+    	border: 1px solid white;
+    	text-align: center !important;
+    	font-weight: bold;
+	}
+	.GridMain td:nth-child(odd) {
+    	background-color: white;
+	}
+
+	.gridviewPager td {
+    	padding: 5px 10px 5px 10px;
+	}
+	.complain-area .dateform-to .from-area input {
+    	width: 87%;
+    	padding: 6px;
+    	border: 2px solid #d7182a !important;
+    	border-radius: 5px;
+	}
+	.complain-area .dateform-to .from-area span {
+    	display: block;
+    	font-size: 13px;
+    	font-weight: 600;
+    	font-family: Montserrat-Regular;
+    	padding: 8px 6px;
+	}
+	.complain-area .dateform-to .from-area {
+    	width: 18%;
+    	display: inline-block;
+	}
+	.complain-wrapper {
+    	margin-left: 10px;
+	}
+	.column.bg-alt {
+    	padding: 32px 0px 0px 32px;
+	}
+	.column.Main {
+    	float: left;
+	}
+	/*.column.Main {
+    	display: flex;
+    	margin-left: 915px;
+	}*/
+	.from-area
+	{
+	margin-left: 10px;
+	}
+	.new_details{
+    	width: 41%;
+    	padding: 3px;
+    	resize: none;
+    	font: 500 13px 'Calibri';
+    	border: 1px solid #d7182a;
+    	/*text-transform: uppercase;*/
+	}
+	.CommentArea {
+    	width: 100%;
+    	margin: 20px auto;
+    	padding: 18px;
+	}
+	.CommentArea td {
+    	width: 20%;
+    	text-align: left;
+	}
+	.CommentArea td + td{
+	width: 40%;
+    	padding: 10px;
+    	border: 2px solid #ccc;
+	}
+	.CommentArea td + td input {
+    	width: 100% !important;
+	padding: 4px;
+	/*text-transform: uppercase;*/
+	border:1px solid #d7182a17 !important;
+	}
+	.CommentArea td + td textarea{
+    	width: 100% !important;
+	padding: 4px;
+	/*text-transform: uppercase;*/
+	border:1px solid #d7182a17 !important;
+	resize:none;
+	}
+	.EvdGrid tr{
+	display: table-row !important;
+	}
+	.EvidGrid table td a{
+	background : none !important;
+	padding : 0px !important;
+	border-radius : 0px !important;
+	}
+	.hideGridColumn
+        {
+            display: none;
+        }
+	.dateform-to {
+    	width: 1100px;
+    	display: inline-block;
+	}
+	.centerText {
+    	text-align: center;
+	}
+	.bigText {
+    	font-size: 16pt;
+	}
+	.boldText {
+    	font-weight: bold;
+	}
+	.blankline {
+    	height: 10px;
+    	color: white;
+    	background-color: white;
+	}
+	.redColor {
+    	color: #d7182a;
+	}
+	.blueColor {
+    	color: #0000FF;
+	}
+	p {
+    	line-height: 26px;
+    	display: block;
+	}
+	.layout {
+    	padding: 20px;
+	}
+h2#ContentPlaceHolder2_h2 {
+    font: 300 23px 'Montserrat-Regular';
+    margin-left: 175px;
+    margin-top: -48px;
+}
+.complain-area {
+    display: flex;
+    background: #d7182a !important;
+}
+input#ContentPlaceHolder1_FileUpload1 {
+    border: 0px;
+}
+select#ContentPlaceHolder1_ddl_sub_assignee {
+    margin-bottom: 3px;
+}

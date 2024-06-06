@@ -1,0 +1,52 @@
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\web.config
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\appsettings.Development.json
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\appsettings.json
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\ChequePro.staticwebassets.runtime.json
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\ChequePro.exe
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\ChequePro.deps.json
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\ChequePro.runtimeconfig.json
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\ChequePro.dll
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\ChequePro.pdb
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\Novell.Directory.Ldap.NETStandard.dll
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\System.Data.SqlClient.dll
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Projects\ChequePro\ChequePro\ChequePro\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.csproj.AssemblyReference.cache
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.AssemblyInfoInputs.cache
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.AssemblyInfo.cs
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.csproj.CoreCompileInputs.cache
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.RazorAssemblyInfo.cache
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.RazorAssemblyInfo.cs
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\staticwebassets\msbuild.ChequePro.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\staticwebassets\msbuild.build.ChequePro.props
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.ChequePro.props
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.ChequePro.props
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\staticwebassets.pack.json
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\staticwebassets.build.json
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\staticwebassets.development.json
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\scopedcss\bundle\ChequePro.styles.css
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\scopedcss\projectbundle\ChequePro.bundle.scp.css
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.csproj.CopyComplete
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.dll
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\refint\ChequePro.dll
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.pdb
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.genruntimeconfig.cache
+D:\Projects\ChequePro\ChequePro\ChequePro\obj\Debug\net7.0\ref\ChequePro.dll
+D:\Ali Raza\Kazim\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.csproj.AssemblyReference.cache
+D:\Ali Raza\Kazim\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ali Raza\Kazim\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.AssemblyInfoInputs.cache
+D:\Ali Raza\Kazim\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.AssemblyInfo.cs
+D:\Ali Raza\Kazim\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.csproj.CoreCompileInputs.cache
+D:\Ali Raza\Kazim\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.MvcApplicationPartsAssemblyInfo.cache
+D:\Ali Raza\Kazim\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.RazorAssemblyInfo.cache
+D:\Ali Raza\Kazim\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.RazorAssemblyInfo.cs
+D:\Ali Raza\Kazim\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.dll
+D:\Ali Raza\Kazim\ChequePro\ChequePro\obj\Debug\net7.0\refint\ChequePro.dll
+D:\Ali Raza\Kazim\ChequePro\ChequePro\obj\Debug\net7.0\ChequePro.pdb

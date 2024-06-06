@@ -1,0 +1,8 @@
+02/28/2024 15:43:16 :|get_chequeSummary Error Exception :: System.ArgumentException: Column 'Image_Too_Dark' does not belong to table Table.
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at ChequePro.DAL.DBFactoryChequePro.get_chequeDetails(Nullable`1 hostID) in D:\Projects\ChequePro\ChequePro\ChequePro\DAL\DBFactoryChequePro.cs:line 277
+02/28/2024 15:44:52 :|get_chequeSummary Error Exception :: System.ArgumentException: Column 'Image_Too_Dark' does not belong to table Table.
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at ChequePro.DAL.DBFactoryChequePro.get_chequeDetails(Nullable`1 hostID) in D:\Projects\ChequePro\ChequePro\ChequePro\DAL\DBFactoryChequePro.cs:line 277

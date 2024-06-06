@@ -1,0 +1,16 @@
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\bin\Release\net7.0-windows\ConnString Convertor.exe
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\bin\Release\net7.0-windows\ConnString Convertor.deps.json
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\bin\Release\net7.0-windows\ConnString Convertor.runtimeconfig.json
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\bin\Release\net7.0-windows\ConnString Convertor.dll
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\bin\Release\net7.0-windows\ConnString Convertor.pdb
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\obj\Release\net7.0-windows\ConnString_Convertor.Form1.resources
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\obj\Release\net7.0-windows\ConnString Convertor.csproj.GenerateResource.cache
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\obj\Release\net7.0-windows\ConnString Convertor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\obj\Release\net7.0-windows\ConnString Convertor.AssemblyInfoInputs.cache
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\obj\Release\net7.0-windows\ConnString Convertor.AssemblyInfo.cs
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\obj\Release\net7.0-windows\ConnString Convertor.csproj.CoreCompileInputs.cache
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\obj\Release\net7.0-windows\ConnString Convertor.dll
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\obj\Release\net7.0-windows\refint\ConnString Convertor.dll
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\obj\Release\net7.0-windows\ConnString Convertor.pdb
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\obj\Release\net7.0-windows\ConnString Convertor.genruntimeconfig.cache
+C:\Users\a.raza\source\repos\ConnString Convertor\ConnString Convertor\obj\Release\net7.0-windows\ref\ConnString Convertor.dll

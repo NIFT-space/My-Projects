@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\raza.jaff\Desktop\publish_CMS</_PublishTargetUrl>
+    <History>True|2023-03-09T10:21:41.0061305Z;True|2023-03-08T15:13:54.8343074+05:00;True|2023-03-08T15:13:49.0910158+05:00;True|2023-03-08T15:01:18.6288698+05:00;True|2023-03-07T12:37:51.6735960+05:00;True|2023-03-06T11:03:33.2316163+05:00;True|2023-03-06T11:02:21.1403395+05:00;True|2023-03-06T10:48:58.4370453+05:00;True|2023-03-06T10:30:19.0913204+05:00;True|2023-03-03T16:04:30.1014959+05:00;True|2023-03-03T15:27:02.4980291+05:00;True|2023-01-23T11:35:22.0060150+05:00;True|2023-01-20T21:23:34.9800948+05:00;True|2023-01-20T15:05:58.9518589+05:00;True|2023-01-20T13:28:06.2731403+05:00;True|2023-01-20T13:07:10.2801950+05:00;True|2023-01-20T12:59:59.9482095+05:00;True|2022-12-27T15:29:16.2517211+05:00;True|2022-12-12T17:19:18.3210557+05:00;True|2022-12-12T16:59:20.0618188+05:00;True|2022-12-12T16:51:00.5000869+05:00;True|2022-12-09T16:37:31.5901315+05:00;True|2022-12-09T15:53:49.3666065+05:00;True|2022-12-09T11:37:43.7386809+05:00;True|2022-12-09T11:35:46.0043215+05:00;True|2022-12-09T11:22:35.0368136+05:00;True|2022-11-08T13:22:25.5256242+05:00;True|2022-11-02T17:25:31.2271067+05:00;True|2022-11-02T14:55:16.8335147+05:00;True|2022-10-06T10:19:10.4644127+05:00;True|2022-10-06T10:10:01.3725511+05:00;True|2022-10-05T20:35:03.7729099+05:00;True|2022-10-05T19:51:32.8912907+05:00;True|2022-10-05T19:33:27.2905569+05:00;True|2022-10-05T19:02:26.1283030+05:00;True|2022-10-05T18:22:17.1831582+05:00;True|2022-10-05T18:17:05.0388743+05:00;True|2022-10-05T18:12:50.0086839+05:00;True|2022-10-05T18:06:05.8553266+05:00;True|2022-10-05T17:58:02.2051898+05:00;True|2022-10-05T17:41:46.6822645+05:00;True|2022-10-05T17:36:52.3980249+05:00;True|2022-10-05T17:30:10.9249364+05:00;True|2022-10-05T15:34:40.5808437+05:00;True|2022-10-05T15:03:50.9104200+05:00;True|2022-10-04T10:11:48.9606144+05:00;True|2022-10-03T19:23:27.3702696+05:00;True|2022-10-03T17:46:52.3151776+05:00;True|2022-09-20T10:22:05.6962645+05:00;True|2022-09-20T10:05:22.0369787+05:00;True|2022-09-16T11:23:53.4516195+05:00;True|2022-09-15T19:36:08.5244574+05:00;True|2022-09-07T18:16:39.1470217+05:00;True|2022-09-07T18:08:50.9438665+05:00;True|2022-09-07T17:36:21.2035562+05:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Admin/AdminTiles.aspx">
+      <publishTime>11/02/2022 11:33:42</publishTime>
+    </File>
+    <File Include="Admin/Create_merchant.aspx">
+      <publishTime>11/16/2021 11:47:12</publishTime>
+    </File>
+    <File Include="Admin/Create_user.aspx">
+      <publishTime>03/08/2023 13:44:54</publishTime>
+    </File>
+    <File Include="Admin/EditRole.aspx">
+      <publishTime>11/08/2022 12:50:12</publishTime>
+    </File>
+    <File Include="Admin/ManageBank.aspx">
+      <publishTime>11/08/2022 12:48:08</publishTime>
+    </File>
+    <File Include="Admin/ManageBranch.aspx">
+      <publishTime>11/17/2021 11:28:57</publishTime>
+    </File>
+    <File Include="Admin/ManageMerchant.aspx">
+      <publishTime>03/08/2023 13:44:08</publishTime>
+    </File>
+    <File Include="Admin/ManageRoles.aspx">
+      <publishTime>11/08/2022 12:49:17</publishTime>
+    </File>
+    <File Include="Admin/ManageUser.aspx">
+      <publishTime>12/08/2022 16:40:43</publishTime>
+    </File>
+    <File Include="Admin/OpTilePage.aspx">
+      <publishTime>12/06/2022 15:56:25</publishTime>
+    </File>
+    <File Include="Admin/UpdateWorkCode.aspx">
+      <publishTime>01/18/2023 18:09:35</publishTime>
+    </File>
+    <File Include="AdminTiles.aspx">
+      <publishTime>11/10/2021 17:26:49</publishTime>
+    </File>
+    <File Include="App_Code/LogWriter.cs">
+      <publishTime>05/27/2022 09:32:08</publishTime>
+    </File>
+    <File Include="Assets/css/bkStylesheet/NEWNewstylesheet.css">
+      <publishTime>09/07/2022 10:41:54</publishTime>
+    </File>
+    <File Include="Assets/css/bkStylesheet/NEWstylecms.css">
+      <publishTime>09/07/2022 10:41:54</publishTime>
+    </File>
+    <File Include="Assets/css/bkStylesheet/OLDNewstylesheet.css">
+      <publishTime>09/07/2022 10:41:54</publishTime>
+    </File>
+    <File Include="Assets/css/bkStylesheet/OLDstylecms.css">
+      <publishTime>09/07/2022 10:41:54</publishTime>
+    </File>
+    <File Include="Assets/css/Fonts/Montserrat-Regular.otf">
+      <publishTime>09/07/2022 13:00:53</publishTime>
+    </File>
+    <File Include="Assets/css/Newstylesheet.css">
+      <publishTime>11/02/2022 17:32:47</publishTime>
+    </File>
+    <File Include="Assets/css/stylecms.css">
+      <publishTime>09/07/2022 10:40:59</publishTime>
+    </File>
+    <File Include="Assets/images/aa.png">
+      <publishTime>09/07/2022 10:41:10</publishTime>
+    </File>
+    <File Include="Assets/images/bank-4-32.png">
+      <publishTime>09/07/2022 10:41:10</publishTime>
+    </File>
+    <File Include="Assets/images/bk_favicon.png">
+      <publishTime>09/07/2022 10:41:10</publishTime>
+    </File>
+    <File Include="Assets/images/favicon.png">
+      <publishTime>09/07/2022 10:41:10</publishTime>
+    </File>
+    <File Include="Assets/images/gif1.gif">
+      <publishTime>09/07/2022 10:41:10</publishTime>
+    </File>
+    <File Include="Assets/images/loading.gif">
+      <publishTime>09/07/2022 10:41:10</publishTime>
+    </File>
+    <File Include="Assets/images/logo.png">
+      <publishTime>09/07/2022 10:41:10</publishTime>
+    </File>
+    <File Include="Assets/images/role-32.png">
+      <publishTime>09/07/2022 10:41:10</publishTime>
+    </File>
+    <File Include="Assets/images/shop-32.png">
+      <publishTime>09/07/2022 10:41:10</publishTime>
+    </File>
+    <File Include="Assets/images/user-3-32.png">
+      <publishTime>09/07/2022 10:41:10</publishTime>
+    </File>
+    <File Include="Assets/images/workers-32.png">
+      <publishTime>09/07/2022 10:41:10</publishTime>
+    </File>
+    <File Include="Assets/js/magnifier.js">
+      <publishTime>09/07/2022 10:41:21</publishTime>
+    </File>
+    <File Include="Assets/toastr/jquery-1.12.4.js">
+      <publishTime>09/07/2022 10:41:30</publishTime>
+    </File>
+    <File Include="Assets/toastr/toastr.css">
+      <publishTime>09/07/2022 10:41:30</publishTime>
+    </File>
+    <File Include="Assets/toastr/toastr.js">
+      <publishTime>09/07/2022 10:41:30</publishTime>
+    </File>
+    <File Include="Assets/toastr/toastrsample.js">
+      <publishTime>09/07/2022 10:41:30</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>03/09/2023 15:21:38</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>03/09/2023 15:21:38</publishTime>
+    </File>
+    <File Include="bin/ClosedXML.dll">
+      <publishTime>12/16/2020 09:59:08</publishTime>
+    </File>
+    <File Include="bin/ClosedXML.pdb">
+      <publishTime>12/16/2020 09:59:08</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>06/06/2017 22:59:22</publishTime>
+    </File>
+    <File Include="bin/ExcelNumberFormat.dll">
+      <publishTime>03/13/2020 09:36:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/25/2018 02:38:22</publishTime>
+    </File>
+    <File Include="bin/Myrmec.dll">
+      <publishTime>06/12/2018 02:19:34</publishTime>
+    </File>
+    <File Include="bin/Myrmec.Mime.dll">
+      <publishTime>06/12/2018 02:19:32</publishTime>
+    </File>
+    <File Include="bin/NIFT_CMS.dll">
+      <publishTime>03/09/2023 15:21:29</publishTime>
+    </File>
+    <File Include="bin/NIFT_CMS.pdb">
+      <publishTime>03/09/2023 15:21:29</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>05/25/2018 02:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>05/25/2018 02:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>05/25/2018 02:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>05/25/2018 02:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>05/25/2018 02:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>05/25/2018 02:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>05/25/2018 02:38:22</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>05/25/2018 02:38:24</publishTime>
+    </File>
+    <File Include="bin/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/11/2016 23:13:46</publishTime>
+    </File>
+    <File Include="bin/System.IO.Packaging.dll">
+      <publishTime>06/11/2016 23:13:48</publishTime>
+    </File>
+    <File Include="ClosedComplaints.aspx">
+      <publishTime>12/06/2022 15:46:28</publishTime>
+    </File>
+    <File Include="cms_login.aspx">
+      <publishTime>11/08/2022 13:06:42</publishTime>
+    </File>
+    <File Include="Complaint_form.aspx">
+      <publishTime>03/09/2023 13:00:33</publishTime>
+    </File>
+    <File Include="CreateCaptcha.aspx">
+      <publishTime>08/05/2021 18:33:13</publishTime>
+    </File>
+    <File Include="Create_merchant.aspx">
+      <publishTime>11/10/2021 18:44:36</publishTime>
+    </File>
+    <File Include="Create_user.aspx">
+      <publishTime>11/10/2021 17:26:41</publishTime>
+    </File>
+    <File Include="EditRole.aspx">
+      <publishTime>11/10/2021 18:46:47</publishTime>
+    </File>
+    <File Include="EncryptConn.aspx">
+      <publishTime>02/04/2022 15:47:11</publishTime>
+    </File>
+    <File Include="epay.png">
+      <publishTime>06/22/2021 17:22:27</publishTime>
+    </File>
+    <File Include="ForgotUser.aspx">
+      <publishTime>11/08/2022 12:55:36</publishTime>
+    </File>
+    <File Include="Handler1.ashx">
+      <publishTime>08/05/2021 17:53:06</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>06/29/2021 20:35:46</publishTime>
+    </File>
+    <File Include="InprogressComplaints.aspx">
+      <publishTime>11/30/2022 18:01:16</publishTime>
+    </File>
+    <File Include="Login/cms_login.aspx">
+      <publishTime>11/10/2021 18:49:47</publishTime>
+    </File>
+    <File Include="Login/CreateCaptcha.aspx">
+      <publishTime>08/05/2021 18:33:13</publishTime>
+    </File>
+    <File Include="Login/ForgotUser.aspx">
+      <publishTime>10/29/2021 16:18:35</publishTime>
+    </File>
+    <File Include="Login/mobile.aspx">
+      <publishTime>10/28/2021 17:32:11</publishTime>
+    </File>
+    <File Include="Login/NewPassword.aspx">
+      <publishTime>09/20/2021 17:11:49</publishTime>
+    </File>
+    <File Include="ManageBank.aspx">
+      <publishTime>11/10/2021 18:45:00</publishTime>
+    </File>
+    <File Include="ManageBranch.aspx">
+      <publishTime>11/10/2021 18:45:27</publishTime>
+    </File>
+    <File Include="ManageMerchant.aspx">
+      <publishTime>11/10/2021 18:45:38</publishTime>
+    </File>
+    <File Include="ManageRoles.aspx">
+      <publishTime>11/10/2021 18:45:49</publishTime>
+    </File>
+    <File Include="ManageUser.aspx">
+      <publishTime>11/10/2021 18:46:02</publishTime>
+    </File>
+    <File Include="Manage_Users.aspx">
+      <publishTime>07/13/2021 10:36:38</publishTime>
+    </File>
+    <File Include="mobile.aspx">
+      <publishTime>11/08/2022 12:56:07</publishTime>
+    </File>
+    <File Include="NewPassword.aspx">
+      <publishTime>11/08/2022 12:56:22</publishTime>
+    </File>
+    <File Include="Notallowed.aspx">
+      <publishTime>12/09/2022 11:13:27</publishTime>
+    </File>
+    <File Include="PendingComplaints.aspx">
+      <publishTime>11/30/2022 18:01:25</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>03/09/2023 15:21:32</publishTime>
+    </File>
+    <File Include="Reports.aspx">
+      <publishTime>03/09/2023 11:57:53</publishTime>
+    </File>
+    <File Include="sessionexpire.aspx">
+      <publishTime>12/09/2022 11:12:29</publishTime>
+    </File>
+    <File Include="Site1.Master">
+      <publishTime>03/08/2023 15:12:37</publishTime>
+    </File>
+    <File Include="ticket_form.aspx">
+      <publishTime>03/07/2023 11:31:24</publishTime>
+    </File>
+    <File Include="ViewComplaint.aspx">
+      <publishTime>03/09/2023 12:25:36</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/03/2023 15:26:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

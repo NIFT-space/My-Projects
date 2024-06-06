@@ -1,0 +1,176 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="NIFT_CMS.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>NIFT-ePay CMS Portal</title>
+
+    <%--<meta http-equiv="refresh" content="120;" />--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link rel="shortcut icon" href="../assets/images/favicon.png"/>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../assets/css/Newstylesheet.css" />
+        <link rel="stylesheet" href="../assets/css/stylecms.css" />
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript">
+        function onlyNumbers(evt) {
+            var e = event || evt; // for trans-browser compatibility
+            var charCode = e.which || e.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return false;
+            return true;
+        }
+        </script>
+
+        <script>
+        $(document).ready(function(){
+            // Show hide popover
+            $(".dropdown").click(function(){
+                $(this).find(".dropdown-menu").slideToggle("fast");
+            });
+        });
+        $(document).on("click", function(event){
+            var $trigger = $(".dropdown");
+            if($trigger !== event.target && !$trigger.has(event.target).length){
+                $(".dropdown-menu").slideUp("fast");
+            }            
+        });
+        </script>
+
+        <script type="text/javascript">
+            //document.onreadystatechange = function () {
+            //    var state = document.readyState
+            //    if (state == 'interactive') {
+            //        document.getElementById('contents').style.visibility = "hidden";
+            //    } else if (state == 'complete') {
+            //        setTimeout(function () {
+            //            document.getElementById('interactive');
+            //            document.getElementById('load').style.visibility = "hidden";
+            //            document.getElementById('contents').style.visibility = "visible";
+            //        }, 1000);
+            //    }
+            //}
+
+            //$(document).on("submit", function (event) {
+            //    setTimeout(function () {
+            //        document.getElementById('interactive');
+            //        document.getElementById('load').style.visibility = "hidden";
+            //        document.getElementById('contents').style.visibility = "visible";
+            //    }, 1000);
+            //});
+        </script>
+        
+        <script type = "text/javascript">
+        function Confirm() {
+            var confirm_value = document.createElement("INPUT");
+            confirm_value.type = "hidden";
+            confirm_value.name = "confirm_value";
+            if (confirm("Please Confirm!")) {
+                confirm_value.value = "YES";
+            }
+            else {
+                confirm_value.value = "NO";
+            }
+            document.forms[0].appendChild(confirm_value);
+        }
+        </script>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var today = new Date();
+                var month = ('0' + (today.getMonth() + 1)).slice(-2);
+                var day = ('0' + (today.getDate())).slice(-2);
+                var year = today.getFullYear();
+                var date = year + '-' + month + '-' + day;
+                $('[id*=txtFromDate]').attr('max', date);
+            });
+        </script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+        <script type="text/javascript" src="<%= Page.ResolveClientUrl("../assets/toastr/toastr.js") %>"></script>
+    <script type="text/javascript" src="<%= Page.ResolveClientUrl("../assets/toastr/toastrsample.js") %>"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/toastr/toastr.css" />
+       <style>
+           #load {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                z-index: 9999;
+                background-image: url("../assets/images/loading.gif");
+                /*background-image: url("15.gif"); */
+                background-position: 50% 40%, 50% 52%;
+                background-repeat: no-repeat, no-repeat;
+                background-color: white;
+            }
+           .lbl_vers {
+               color: white;
+               font-size: 10px;
+               font-style: italic;
+               font-weight: bold;
+               margin-top: -1px;
+               margin-bottom: -5px;
+               display: block;
+           }
+       </style>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="resolution-warning">
+        <img src="../images/logo.png" alt="NiFT" /><br />
+        <br />
+        YOUR SCREEN RESOLUTION IS TOO SMALL.
+        <br />
+        REQUIRED SCREEN SIZE IS 1024 x 768 OR HIGHER<br />
+        TO DISPLAY THE CMS PORTAL<br />
+        <br />
+        Operating System Must be Windows 8.1 or higher<br />
+        <br />
+        Browser Must be Microsoft Internet explorer 11 or higher,<br />
+        Microsoft EDGE or Latest Version of Google Chrome
+        <br />
+    </div>
+    <form id="form1" runat="server">
+        <%-- Logo at Login  --%>
+        <%--<div id="load">
+        </div>--%>
+        <%-- End --%>
+        <div id="contents" class="homepanel">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                <div class="complain-area">
+        
+                    <div class="logo_class">
+                        <img src="../images/logo.png">
+                        <label class="lbl_vers">Version 1.0.0.0</label>
+
+                    </div>
+                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                    <%--<div class="Head_div" >
+             <div class="column Main">
+            <ul><li class="dropdown">
+                <a href="#">MENU ▾</a>
+            <ul class="dropdown-menu">
+                <li class="lia"><a id="link1" runat="server">Initiate Complaint</a></li>
+                <li class="lia"><a id="link2" runat="server">In-Progress</a></li>
+                <li class="lia"><a id="link3" runat="server">Pending Complaint</a></li>
+                <li class="lia"><a id="link4" runat="server">Closed Complaint</a></li>
+                <li class="lia"><a id="link5" runat="server">Reports</a></li>
+            </ul></li></ul>
+                </div>
+            <asp:Label runat="server" ID="lbl_user" CssClass="banklogoclass"></asp:Label>
+            <asp:Button ID="sign_out" Text="SIGNOUT" CssClass="btn_upload" runat="server" OnClick="sign_out_Click" />
+                
+               </div>--%>
+
+                    </div>
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
